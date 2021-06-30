@@ -4,17 +4,27 @@ import { Text, View, StyleSheet } from 'react-native';
 export default function SettingsScreen() {
     return (
       <View style={styles.container}>
-        <Text style={styles.settings}>Settings!</Text>
+        <Text style={styles.heading}>Settings</Text>
+        <Text style={styles.content}> Content! </Text>
       </View>
     );
   }
 
-const styles = StyleSheet.create( {
+const styles = StyleSheet.create( { 
     container: {
-      flex: 1, justifyContent: 'center', alignItems: 'center'
+      flex: 1, 
+      justifyContent: 'center', 
+      alignItems: 'center',
+      backgroundColor: 'lightgreen'
     },
-    settings: {
+    heading: {
       fontSize: 48,
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      margin: 20
+    },
+    content: {
+      fontSize: 28,
+      fontWeight: 'bold',
+      color: 'violet'
     }
     })  
