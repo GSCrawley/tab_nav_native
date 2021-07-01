@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { Ionicons } from 'react-native-vector-icons';
 
 export default function HomeScreen() {
     return (
@@ -9,10 +10,11 @@ export default function HomeScreen() {
           <Text style={ styles.heading }>Home</Text>
           <Text style= { styles.content }>Welcome!</Text>
          
-          <Icon name="rocket" size={30} color="#900" />
+          <Icon style={ styles.icon } name="rocket" size={80} color="#900" />
+          <Ionicons name="planet-outline" size={120} color="yellow" ></Ionicons>
           </View>
           
-      <View style={{marginTop: 16, marginBottom: 16}}>
+      <View style={{marginTop: 56, marginBottom: 56}}>
     {/* Icon.Button Component */}
           <Icon.Button
             name="facebook"
@@ -30,7 +32,7 @@ const styles = StyleSheet.create( {
     flex: 1, 
     justifyContent: 'center', 
     alignItems: 'center',
-    backgroundColor: 'violet'
+    backgroundColor: '#BDC6CA'
   },
   heading: {
     fontSize: 48,
@@ -51,6 +53,9 @@ const styles = StyleSheet.create( {
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
+  },
+  icon: {
+    margin: 60,
   },
   textStyle: {
     textAlign: 'center',

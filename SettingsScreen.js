@@ -7,11 +7,7 @@ export default function SettingsScreen() {
       <View style={styles.container}>
         <Text style={styles.heading}>Settings</Text>
         <Text style={styles.content}> Content! </Text>
-       
-        {/* <Text style={styles.textStyle}>
-          Icon (camera, information-circle-outline)
-          for all platforms
-        </Text> */}
+  
         <Text style={styles.instructions}>
           <Icon name="camera" size={40} color="red" />
         </Text>
