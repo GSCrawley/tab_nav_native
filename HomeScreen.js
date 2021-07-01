@@ -7,11 +7,14 @@ export default function HomeScreen() {
     return (
       <View style={ styles.container }>
       <View style={ styles.iconContainer }>
+      <Ionicons name="home-outline" size={80} color="brown" ></Ionicons>
+
           <Text style={ styles.heading }>Home</Text>
           <Text style= { styles.content }>Welcome!</Text>
-         
-          <Icon style={ styles.icon } name="rocket" size={80} color="#900" />
-          <Ionicons name="planet-outline" size={120} color="yellow" ></Ionicons>
+          <Ionicons name="earth-outline" size={100} color="navy" ></Ionicons>
+
+          <Icon style={ styles.icon } name="rocket" size={80} color="#678" />
+          <Ionicons name="planet-outline" size={120} color="olive" ></Ionicons>
           </View>
           
       <View style={{marginTop: 56, marginBottom: 56}}>
@@ -40,12 +43,13 @@ const styles = StyleSheet.create( {
     margin: 20,
     color: 'black',
     textAlign: 'center',
-    marginBottom: 20
+    marginBottom: 10
   },
   content: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: 'lightgreen'
+    color: '#F7F9F9',
+    marginBottom: 20
   },
   iconContainer: {
     marginTop: 16,
